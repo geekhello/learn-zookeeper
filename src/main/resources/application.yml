@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: learn-zookeeper
+server:
+  port: 8090
+
+learn:
+ zk:
+   profile: dev
+#   connectionAddr: 47.244.62.111:2181,47.244.62.111:2182,47.244.62.111:2183
+   connectionAddr: 150.109.16.149:2181
+   retrySleepTime: 1000
+   retryCount: 3
+   sessionTimeout: 6000
+   connectionTimeout: 6000
+   modules: /user/base,/user/center,/member/base
